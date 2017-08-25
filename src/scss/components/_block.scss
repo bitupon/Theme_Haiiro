@@ -1,0 +1,23 @@
+/*
+	* _block.scss - UI Block Component
+	*
+*/
+
+
+.#{$kr}-block{	
+	padding:0 5px;
+	
+
+	&__header{
+		color: map-get($theme, pri-color)!important;			    
+	    font-size: 16px;
+	    font-weight: 600;
+	    padding: 0px;
+		margin: 0px;
+	   
+	}
+
+	&__body{
+		padding-top: 10px;
+	}	
+}

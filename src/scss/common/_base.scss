@@ -1,0 +1,34 @@
+/*
+	* _block.scss - UI Block Component
+	*
+*/
+
+@import "common/variables";
+@import "common/mixins";
+@import "common/icons";
+
+html,body{
+	padding: 0;
+	margin:0;
+	font-size:14px;
+	color:  $f-color!important;
+	font-family: 'Roboto', sans-serif;
+	height:100%;
+	width:100%;
+}
+
+h1,h2,h3,h4,h5{
+	color:  $f-color!important;
+}
+
+a{
+	&:hover,&:visited{
+		text-decoration: none;
+		//color:initial;
+	}
+
+	&:visited,&:active{
+		color:  $f-color!important;
+	}
+}
+

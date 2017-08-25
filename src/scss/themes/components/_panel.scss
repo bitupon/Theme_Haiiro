@@ -1,0 +1,30 @@
+.#{$kr}{
+	&-panel{
+		$panel:&;
+
+		border: solid 1px #f1f1f1;	
+		box-shadow: 0 2px 1px rgba(0,0,0,.07);
+	
+		.panel{
+			
+
+			&-footer{
+				background: transparent;
+				border-top: dashed 1px #ccc;				
+			}
+			
+		}	
+
+		h3.panel-title{
+			color:map-get($theme, pri-color-dk)!important;
+		
+			border-bottom: solid 1px #f1f1f1;
+
+			&:after{
+			
+				background: map-get($theme, pri-color-dk)!important;
+			
+			}
+		}		
+	}
+}

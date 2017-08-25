@@ -1,0 +1,24 @@
+/*
+	* _widgets.scss 
+	*
+*/
+
+
+.#{$kr}{
+    &-widget{
+        .ms{
+            &-webpart-zone{
+                display: block;
+            }
+
+            &-webpartzone-cell{
+                display: block;
+                margin:0;
+            }
+
+            &-webpart-chrome{
+                display: block;
+            }
+        }
+    }
+}

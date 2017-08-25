@@ -1,0 +1,181 @@
+/*
+	* navigation.scss - UI Navigation Component
+	*
+*/
+
+.#{$kr}{
+	&-navigation{
+		$nav:&;	
+		
+		@extend #list;
+		&:after{
+
+		    @extend #after-clear
+		}
+
+		&-wrapper{
+			background-color:  map-get($theme, pri-color);
+			&--boxed{
+				#{$nav}{
+					width:1440px;
+					margin: auto;
+				}				
+			}
+		}
+
+		> li{
+			position: relative;
+			float: left;	
+
+			&:hover{			
+
+				> #{$nav}__menu{
+					display: block;
+				}
+			}			
+		}
+
+		#{$nav}__item{
+			display: inline-block;
+			padding: 11px 20px;
+			color: #fff!important;
+			text-decoration: none;
+			font-size: 14px;
+			transition: color $tr-medium;
+
+			&:hover{
+				color: #12aa15!important;				
+			}
+
+					
+		}
+
+		#{$nav}__menu{
+			$navMenu:&;
+			display: none;
+			position: absolute;			
+			top:42px;
+			background-color: #1353aa;
+			border-top: solid 2px map-get($theme, pri-color-dk);
+			width:200px;
+			@extend #ellipsis;
+			z-index: 10;
+			@extend #list;
+
+			&-item{
+				display: block;
+				padding:10px 20px;
+				color: #fff!important;
+				cursor: pointer;
+				transition: all $tr-medium;
+				&:hover{
+					background-color: map-get($theme, pri-color-dk-hover);
+					color: #12aa15!important;				
+				}
+
+				&:focused,&:active{
+					color: #fff!important;;
+				}
+			}
+			
+		}
+
+		&#{$nav}--settings{
+			#{$nav}__item{
+				padding: 0px 14px;				
+				font-size: 11px;
+				letter-spacing: 1px;
+				border-right: solid 1px #ccc;
+				text-transform: uppercase;
+						
+			}
+
+			li{
+				&:last-child{
+					#{$nav}__item{
+						border-right: none;		
+						padding-right: 0;							
+					}
+				}
+			}
+		}
+		
+
+		&#{$nav}--primary{
+			background-color: #dddee0;
+			> li{
+				position: relative;
+				float: left;	
+
+				&:hover{			
+
+					> #{$nav}__menu{
+						display: block;
+					}
+				}			
+			}
+
+			#{$nav}__item{
+				display: inline-block;
+				padding: 11px 20px;
+				color: #565a65;
+				text-decoration: none;
+				font-size: 14px;
+
+				&:hover{
+					color: #e72d30;				
+				}
+
+						
+			}
+
+			#{$nav}__menu{
+				$navMenu:&;
+				display: none;
+				position: absolute;			
+				top:42px;
+				background-color: #dddee0;
+				border-top: solid 2px #b5b7bc;
+				width:200px;
+				@extend #ellipsis;
+				z-index: 10;
+				@extend #list;
+
+				#{$navMenu}-item{
+					display: block;
+					padding:10px 20px;
+					color: inherit;
+					cursor: pointer;
+					transition: all $tr-medium;
+					&:hover{
+						background-color: #d0d1d4;
+						color:$pri-color;
+					}
+				}
+				
+			}
+
+			&#{$nav}--settings{
+				#{$nav}__item{
+					padding: 0px 14px;				
+					font-size: 11px;
+					letter-spacing: 1px;
+					border-right: solid 1px #ccc;
+					text-transform: uppercase;
+							
+				}
+
+				li{
+					&:last-child{
+						#{$nav}__item{
+							border-right: none;		
+							padding-right: 0;							
+						}
+					}
+				}
+			}
+		}
+
+	}
+
+}

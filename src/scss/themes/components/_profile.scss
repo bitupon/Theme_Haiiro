@@ -1,0 +1,13 @@
+.#{$kr}-profile{
+	$profile:&;   
+	
+	&__details{
+		#{$profile}__name{
+			color: map-get($theme, pri-color)!important;	
+		}
+
+		#{$profile}__role{	
+			color: #758292!important;	
+		}
+	}
+}

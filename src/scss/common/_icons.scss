@@ -1,0 +1,35 @@
+/*
+	* _icons.scss 
+	*
+*/
+
+.#{$kr}-icn{
+    margin-right: 10px;
+
+    &--clickable{
+        cursor:pointer;
+    }
+    
+    &--o{
+        border: solid 2px #fff;
+        padding: 8px;
+        border-radius: 20px;
+    }        
+    &-fa{
+
+        display: inline-block;
+        font: normal normal normal 14px/1 FontAwesome;
+        font-size: inherit;
+        text-rendering: auto;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
+}
+
+.fa{
+    &--clickable{
+        cursor:pointer;
+    }
+}
+
+

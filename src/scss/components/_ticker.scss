@@ -1,0 +1,74 @@
+/*
+	* _ticker.scss - UI Ticker Component
+	*
+*/
+
+.#{$kr}{
+	&-ticker{
+        $ticker:&;           
+        margin-bottom: 20px;
+        &__inner{
+            background-color: #f3f4f5;
+            height: 50px;
+            border: solid 1px #ececec;
+            border-top: none;
+        }
+
+        &__item{
+            height: 100%;                 
+        }
+
+        &__control{            
+            width: 20px;           
+            line-height: 50px;
+            top: 0;
+            right: 10px;
+            left: initial;
+            background: none;
+            background-image: none !important;
+            text-shadow: none;
+            color: #525c68 !important;
+        
+
+            .fa{
+                font-size: 30px;
+            }
+
+            &.left{
+                right: 40px;
+            }
+
+            &.right{
+                right: 10px;
+            }
+        }
+      
+        &__caption{                        
+            top: 0;           
+            left: 0;
+            right: 0;
+            padding: 15px;
+            height: 100%;
+
+            &-title{
+                display: table-cell;
+                padding:0;
+                margin:0;
+                text-align: left;
+                font-size: 16px;
+              
+                text-shadow: none;
+                font-weight: 100;
+                letter-spacing: 1px;
+            }
+            &-desc{
+                display: table-cell;
+                text-align: left;
+                text-shadow: none;
+                color:map-get($theme, pri-color)!important;
+                padding: 0 20px;
+            }
+        }
+        
+    }
+}

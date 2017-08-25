@@ -1,0 +1,6 @@
+{
+  "title": 				"gulp_broilerplate",
+  "version": 			"1.0.0",
+  "app": 				"./app/",
+  "deploy" : "./deploy/"
+}

@@ -1,0 +1,38 @@
+/*
+	* _profile.scss - UI Profile Component
+	*
+*/
+
+.#{$kr}-profile{
+	$profile:&;
+	display: inline-block;
+	position: relative;
+    &:after{
+		@extend #after-clear;
+	}
+
+	&__pic{
+		display: inline-block;
+		@include square(110px);    
+
+	    img{
+	    	height: 100%;
+			width:100%;
+	    }   
+	}
+	&__details{
+		#{$profile}__name{
+			color: map-get($theme, pri-color)!important;	
+			text-transform: uppercase;		    
+			font-size: 14px;
+    		font-weight: 100;
+    		margin: 20px 0 5px 0;
+		}
+
+		#{$profile}__role{	
+			color: #758292!important;		
+			font-size: 12px;
+			margin: 0;		
+		}
+	}
+}

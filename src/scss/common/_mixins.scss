@@ -1,0 +1,9 @@
+/*
+	* _mixins.scss 
+	*
+*/
+@mixin square($unit) {
+    width: $unit;
+    height: $unit;
+}
+

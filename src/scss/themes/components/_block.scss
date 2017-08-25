@@ -1,0 +1,5 @@
+.#{$kr}-block{	
+	&__header{
+		color: map-get($theme, pri-color)!important;  
+	}
+}

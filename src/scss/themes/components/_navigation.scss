@@ -1,0 +1,38 @@
+.#{$kr}{
+	&-navigation{
+		$nav:&;	
+
+		&-wrapper{
+			background-color:  map-get($theme, pri-color);			
+		}		
+
+		#{$nav}__item{		
+			color: #fff!important;	
+			&:hover{
+				color: #ccc!important;				
+			}					
+		}
+
+		#{$nav}__menu{
+			$navMenu:&;
+			
+			background-color: map-get($theme, pri-color);	
+			border-top: solid 2px map-get($theme, pri-color-dk);					
+
+			&-item{
+				
+				color: #fff!important;				
+				&:hover{
+					background-color: map-get($theme, pri-color-dk-hover);
+					color: #ccc!important;				
+				}
+				&:focused,&:active{
+					color: #ccc!important;
+				}
+			}
+					}
+
+		
+	}
+
+}

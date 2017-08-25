@@ -1,0 +1,76 @@
+.#{$kr}{
+	&-list{
+		$list:&;
+		&__title{
+			color: map-get($theme, pri-color)!important;			    
+		
+
+			&-note{				
+				color:  $f-color-light;
+			
+			}
+		}
+
+		&__content{		
+			&-note{
+				color:#758292;
+			}
+		}
+
+		&__body{
+			&-left{		
+				.list{
+					&-group{
+						&-item{						
+
+							&__tile{
+								
+								background: map-get($theme, pri-color-dk)!important;		
+								> .header{
+									color: #fff;									
+								}
+
+								> .content{
+									color: #fff;								
+								}
+							}
+						}
+					}
+				}
+			}
+
+			
+		}
+
+		.list{
+			&-group{
+				&-item{
+					background: transparent;					
+					
+					> a{
+						color: inherit;
+						
+						&:visited,&:active{
+							color: inherit;
+						}
+
+						> .kr-icn{
+							color: map-get($theme, pri-color)!important;
+						
+						}
+					}
+				}
+			}
+		}
+
+		&--details{
+			.list{
+				&-group{
+					&-item{						
+    					border-bottom: dashed 1px #ccc;
+					}
+				}
+			}
+		}			
+	}
+}

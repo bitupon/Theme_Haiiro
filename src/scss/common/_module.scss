@@ -1,0 +1,21 @@
+/*
+	* _module.scss 
+	*
+*/
+.#{$kr}-module{
+	margin-bottom: 20px;
+	&__header{
+		color: #525c68;
+		font-size: 18px;
+		font-weight: 600;
+	}
+
+	&__content{
+		padding: 10px 0;
+	}
+
+	&--gray{
+		background-color: #edeef0;
+	}
+
+}

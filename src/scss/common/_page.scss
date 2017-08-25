@@ -1,0 +1,43 @@
+/*
+	* _page.scss 
+	*
+*/
+
+.#{$kr}{
+	&-main{				
+		width:100%;
+		overflow: auto;
+    	height: 100%;
+		&--bg{
+			background-color: #e8ecf3;
+		}
+
+		&--boxed{
+
+		}
+	}
+
+	&-content{	
+		margin: 0 auto;
+		
+		//height: calc(100% - 123px);
+	
+		//overflow: auto;
+	}
+
+	&-page{		
+		margin: auto;
+		padding: 20px 15px;
+
+		&--boxed{
+			width:1440px;
+		}
+	}
+
+	&-tag{
+		background-color: #f5f5f5;
+    	font-size: 12px;
+    	padding: 4px;
+		display: inline-block;
+	}
+}

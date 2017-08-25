@@ -1,0 +1,46 @@
+/*
+ * * * _toolbar.scss - UI Toolbar Component
+ * * *
+ */
+
+.#{$kr}-toolbar{
+    display: inline-block;
+    width: 200px;   
+    padding: 20px;
+    position: absolute;
+    right: 20px;
+    z-index: 1000;
+    background-color: #3d3d3d;
+    top: -290px;
+    transition: all $tr-medium;
+
+    &__content{
+        color: #fff;
+
+        &-label{
+            font-weight: 100;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+    }
+
+    &__toggler{
+        position: absolute;
+        background-color: #ff6c37;
+        width: 25px;
+        height: 25px;
+        text-align: center;
+        bottom: -25px;
+        right: 0;
+        cursor: pointer;
+        font-size: 20px;
+        color: #fff;
+        &:hover{
+             background-color: #ff591e;
+        }
+    }
+
+    &--active{
+        top:0;
+    }
+}

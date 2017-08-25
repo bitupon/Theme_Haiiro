@@ -1,0 +1,160 @@
+/*
+	* _list.scss - UI List Component
+	*
+*/
+
+.#{$kr}{
+	&-list{
+		$list:&;
+		border-radius: 0;
+
+		&__title{
+			color: map-get($theme, pri-color)!important;			    
+			padding: 0;
+			margin: 0;
+			font-size: 14px;
+			font-weight: 600;
+
+			&-note{
+				font-size: 12px;
+				color:  $f-color-light;
+				font-style: italic;
+			}
+		}
+
+		&__content{
+			padding: 10px 0 0 0px;
+
+			&-note{
+				color:#758292;
+			}
+		}
+
+		&__body{
+
+			&-left{				
+				display: table-cell;				
+				//float: left;
+
+				.list{
+					&-group{
+						&-item{
+							&__img{
+								@include square(60px);
+								border-radius:100%;
+							}
+
+							&__tile{
+								@include square(60px);
+								background: map-get($theme, pri-color)!important;
+								padding: 8px;
+								text-align: center;
+								line-height: 1;
+
+								> .header{
+									color: #fff;
+									font-size: 14px;
+									display: block;
+									font-weight: 600;
+									margin-bottom: 4px;
+								}
+
+								> .content{
+									color: #fff;
+									font-size: 13px;									
+									font-weight: 100;
+								}
+							}
+						}
+					}
+				}
+			}
+
+			&-right{
+				padding-left: 10px;
+				display: table-cell;					
+				width: calc(100% - 60px);	
+				vertical-align: middle;		
+			}
+		}
+
+		.list{
+			&-group{
+				&-item{
+					background: transparent;					
+					&:first-child,&:last-child{
+						border-radius:0;
+					}
+
+					> a{
+						color: inherit;
+						&:hover{
+							text-decoration: underline;
+						}
+						&:visited,&:active{
+							color: inherit;
+						}
+
+						> .kr-icn{
+							color: map-get($theme, pri-color)!important;
+							vertical-align: text-top;
+						}
+					}
+				}
+			}
+		}
+
+		&--brdless{		   
+
+    		.list{
+				&-group{
+					&-item{
+						border-left: none;
+    					border-right: none;
+						&:first-child{
+							border-top: none;
+						}
+						&:last-child{
+							border-bottom: none;
+						}
+					}
+				}
+			}
+		}
+
+		&--brdless-a{		   
+
+    		.list{
+				&-group{
+					&-item{
+						padding: 10px 0px;
+						border: none;
+    					border-right: none;						
+					}
+				}
+			}
+		}	
+
+		&--details{
+			.list{
+				&-group{
+					&-item{
+						border: none;
+    					border-bottom: dashed 1px #ccc;
+					}
+				}
+			}
+		}	
+
+		&--sm{
+			.list{
+				&-group{
+					&-item{
+						padding-top: 5px;
+						padding-bottom: 5px;
+					}
+				}
+			}
+		}
+	}
+}

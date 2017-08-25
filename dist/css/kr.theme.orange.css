@@ -1,0 +1,74 @@
+/*
+* @main.scss - main sass file
+*
+*/
+/*
+ *@_variables : all variables 
+ *
+ */
+.kr-navigation-wrapper {
+  background-color: #ff6600; }
+
+.kr-navigation .kr-navigation__item {
+  color: #fff !important; }
+  .kr-navigation .kr-navigation__item:hover {
+    color: #ccc !important; }
+
+.kr-navigation .kr-navigation__menu {
+  background-color: #ff6600;
+  border-top: solid 2px #e65c00; }
+  .kr-navigation .kr-navigation__menu-item {
+    color: #fff !important; }
+    .kr-navigation .kr-navigation__menu-item:hover {
+      background-color: #cc5200;
+      color: #ccc !important; }
+    .kr-navigation .kr-navigation__menu-item:focused, .kr-navigation .kr-navigation__menu-item:active {
+      color: #ccc !important; }
+
+.kr-panel {
+  border: solid 1px #f1f1f1;
+  box-shadow: 0 2px 1px rgba(0, 0, 0, 0.07); }
+  .kr-panel .panel-footer {
+    background: transparent;
+    border-top: dashed 1px #ccc; }
+  .kr-panel h3.panel-title {
+    color: #e65c00 !important;
+    border-bottom: solid 1px #f1f1f1; }
+    .kr-panel h3.panel-title:after {
+      background: #e65c00 !important; }
+
+.kr-list__title {
+  color: #ff6600 !important; }
+  .kr-list__title-note {
+    color: #758292; }
+
+.kr-list__content-note {
+  color: #758292; }
+
+.kr-list__body-left .list-group-item__tile {
+  background: #e65c00 !important; }
+  .kr-list__body-left .list-group-item__tile > .header {
+    color: #fff; }
+  .kr-list__body-left .list-group-item__tile > .content {
+    color: #fff; }
+
+.kr-list .list-group-item {
+  background: transparent; }
+  .kr-list .list-group-item > a {
+    color: inherit; }
+    .kr-list .list-group-item > a:visited, .kr-list .list-group-item > a:active {
+      color: inherit; }
+    .kr-list .list-group-item > a > .kr-icn {
+      color: #ff6600 !important; }
+
+.kr-list--details .list-group-item {
+  border-bottom: dashed 1px #ccc; }
+
+.kr-block__header {
+  color: #ff6600 !important; }
+
+.kr-profile__details .kr-profile__name {
+  color: #ff6600 !important; }
+
+.kr-profile__details .kr-profile__role {
+  color: #758292 !important; }

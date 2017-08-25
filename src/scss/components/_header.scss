@@ -1,0 +1,47 @@
+/*
+	* _header.scss - UI Header Component
+	*
+*/
+
+.#{$kr}-header{
+    $header:&;
+ 
+
+    &__top{       
+        height: 80px;
+        padding: 0 20px;
+        box-sizing: border-box;
+        &:after{
+            @extend #after-clear;
+        }
+    }
+
+    &__bottom{       
+        background-color: #dddee0;
+        &:after{
+            @extend #after-clear;
+        }
+    }
+
+    &__logo{
+        display: inline-block;
+        width: 100px;
+        height: 60px;
+        margin-top: 10px;
+
+        img{
+            @include square(100%);
+        }
+    }
+
+    &--boxed{
+        #{$header}__top{
+            margin: auto;
+            width:1440px;
+        }
+
+        #{$header}__bottom{
+            
+        }
+    }
+}
