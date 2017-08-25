@@ -11,7 +11,7 @@
 
    
     return function () {
-        gulp.src(scriptsArr)
+        return gulp.src(scriptsArr)
             .pipe(plugins.concat('scripts-all.js'))
             .pipe(plugins.uglify())
             .on('error', plugins.notify.onError(function (error) {

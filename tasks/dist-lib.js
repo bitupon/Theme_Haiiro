@@ -6,7 +6,7 @@
 
 module.exports = function (gulp, plugins,project) {
     return function () {
-        gulp.src([
+        return gulp.src([
                 //'./dist/libs/*/dist/*/*.*',
                 './dist/libs/jquery/dist/jquery.min.js',
                 './dist/libs/bootstrap/dist/*/*.*',              

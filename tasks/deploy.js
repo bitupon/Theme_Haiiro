@@ -5,21 +5,16 @@
  */
 
 module.exports = function (gulp, plugins,project) {
-    return function () {
-        gulp.src([
-                './app/**/**/**/**/**/*.*', '!./app/settings.xml'             
-                ], {base: './app/'})
-            .pipe(gulp.dest(project.deploy + project.title))
-            .pipe(plugins.notify({
-                message: "Deployment Successful"
-            }));
+    return function () {     
 
-        gulp.src([
-                './app/settings.xml'             
-                ], {base: './app/'})
+       return gulp.src([
+                './app/**/**/*.*', '!./app/settings.xml'             
+                ], {base: './app'})
             .pipe(gulp.dest(project.deploy))
             .pipe(plugins.notify({
                 message: "Deployment Successful"
             }));
+
+        
     };
 };
