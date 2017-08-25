@@ -19,7 +19,7 @@
             }))
             .pipe(gulp.dest(paths.scriptsMin))
             .pipe(plugins.notify({
-                message: "Scripts Concatenation Successful"
+                message: "scripts concatenation successful"
             }));
      
     };

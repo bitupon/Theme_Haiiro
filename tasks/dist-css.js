@@ -8,8 +8,8 @@ module.exports = function (gulp, plugins,project) {
     return function () {
         gulp.src(['./dist/**/*.*','!./dist/scripts/*.js','!./dist/libs/**/*.*'], {base: './dist/'})
             .pipe(gulp.dest(project.app))
-            // .pipe(plugins.notify({
-            //     message: "Transfer Successful"
-            // }));
+            .pipe(plugins.notify({
+                 message: "CSS Transfer from dist to app successful"
+             }));
     };
 };

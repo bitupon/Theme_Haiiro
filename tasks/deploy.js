@@ -9,7 +9,7 @@ module.exports = function (gulp, plugins,project) {
         gulp.src([
                 './app/**/**/**/**/**/*.*', '!./app/settings.xml'             
                 ], {base: './app/'})
-            .pipe(gulp.dest(project.deploy + 'bod'))
+            .pipe(gulp.dest(project.deploy + project.title))
             .pipe(plugins.notify({
                 message: "Deployment Successful"
             }));

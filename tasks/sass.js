@@ -11,16 +11,16 @@ module.exports = function (gulp, plugins,paths) {
         paths.scssThemes + 'kr.theme.orange.scss'
     ];
     
-    return function () {
+    return function () {        
     
-        gulp.src(scssArr)
+       return gulp.src(scssArr)        
             .pipe(plugins.sass())
             .on('error', plugins.notify.onError(function (error) {
                 return 'An error occurred while compiling sass.\nLook in the console for details.\n' + error;
-            }))
-            .pipe(gulp.dest(paths.cssMin))
-            // .pipe(plugins.notify({
-            //     message: "SCSS Compilation Successful"
-            // }));
+            }))            
+            .pipe(gulp.dest(paths.cssMin))            
+            .pipe(plugins.notify({
+                 message: "scss compilation to css successful"
+            }));
     };
 };
