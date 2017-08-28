@@ -74,13 +74,15 @@ var gulp = require('gulp'),
 /*
  * @task: Watcher Tasks
  */
-    // gulp.task('serve', gulp.parallel('serve-css', 'serve-js', 'dist-lib', 'dist-css', 'dist-js'), function() {
-    //     gulp.watch(['src/scss/**/*.scss'],  gulp.parallel('sass', 'dist-css'));
-    //     gulp.watch(['src/scripts/*.js'], ['scripts', 'dist-js']);
-    // });
+   
 
     gulp.task('serve-css', gulp.parallel('sass', 'dist-css'), function() {
         gulp.watch(['src/scss/**/*.scss'],  gulp.parallel('sass', 'dist-css'));
+    });
+
+     gulp.task('serve', gulp.series('serve-css', 'dist-lib', 'dist-css'), function() {
+        gulp.watch(['src/scss/**/*.scss'],  gulp.parallel('sass', 'dist-css'));
+        //gulp.watch(['src/scripts/*.js'], ['scripts', 'dist-js']);
     });
 
     // gulp.task('serve-js', gulp.parallel('scripts', 'dist-js'), function() {

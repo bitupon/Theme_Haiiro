@@ -8,6 +8,15 @@
 		$nav:&;
 		@extend #list;
 		
+		&-wrapper{
+			background-color:  map-get($theme, pri-color);
+			&--boxed{
+				#{$nav}{
+					width:1440px;
+					margin: auto;
+				}				
+			}
+		}
 
 		.ms-core-listMenu-horizontalBox{
 			display: block;
@@ -48,6 +57,7 @@
 				font-size: 14px;
 				transition: color $tr-medium;
 				cursor: pointer;
+				font-weight: 400;
 
 				&:hover{
 					color: #12aa15!important;				
@@ -89,17 +99,7 @@
 									color: #fff!important;;
 								}
 
-								// .dynamic-children.additional-background{
-								// 	background-image: none;
-								// 	&:before{
-								// 		//@extend .#{$win}-icn-fa;
-								// 		content: "\f105";			
-								// 		position: absolute;
-								// 		right: 15px;
-								// 		top: 2px;
-								// 		font-size: 20px;
-								// 	}
-								// }
+							
 							}
 
 							&:hover,&.hover,&.hover-off{
@@ -153,3 +153,129 @@
 		}		
 	}
 }
+
+
+
+
+/*******    Phone ***********************/
+
+@media(max-width: 960px) {
+			
+	.#{$kr}{
+		&-navigation{
+			$nav:&;
+			//@extend #list;	
+
+			&-wrapper{
+				
+				&--boxed{
+					#{$nav}{
+						width:auto;
+					}				
+				}
+			}
+			
+
+			.ms-core-listMenu-horizontalBox{			
+
+				ul,li{
+					display: block!important;	
+				}
+
+				ul{
+					padding:0;
+				}
+			}
+
+			.ms-core-listMenu-root {					
+				> li{						
+					
+					> a{
+						float: none;
+					}
+
+					ul {
+						li{
+							&:hover,&.hover,&.hover-off{
+								> ul{
+									&.dynamic{									
+										height: auto;
+									}	
+								}					
+							}
+						}
+					}
+				}				
+
+				.ms-core-listMenu-item{
+					position: relative;
+					display: block;
+					padding: 11px 20px;
+					color: #fff!important;
+					margin: 0!important;
+					text-decoration: none;
+					font-size: 14px;
+					font-weight: 400;
+					transition: color $tr-medium;
+					cursor: pointer;
+
+					&:hover{
+						color: #12aa15!important;	
+						background-color:  map-get($theme, pri-color-dk)!important;								
+					}
+
+					&.active,&.ms-core-listMenu-selected{
+						color:#e1e1e1;
+					}
+
+					+ ul{
+						&.dynamic{
+							$navMenu:&;
+							display: block;
+							position: relative;			
+							top:0!important;
+							left: 0;
+							background-color: #104893;
+							border:none;
+						
+							width:auto!important;
+							box-shadow: none;
+						
+							z-index: 10;
+						
+							height: 0;
+
+							> li{
+								position: relative;
+								.ms-core-listMenu-item {	
+									display: block;
+									padding:10px 20px;
+									color: #fff!important;
+									cursor: pointer;
+									transition: all $tr-medium;
+									float: none;
+									&:hover{
+										background-color: map-get($theme, pri-color-dk-hover);
+										color: #12aa15!important;				
+									}
+
+									&:focused,&:active{
+										color: #fff!important;;
+									}								
+								}																	
+							}								
+						}
+					}			
+
+				}			
+			}		
+		}
+	}
+}
+
+
+
+
+
+
+

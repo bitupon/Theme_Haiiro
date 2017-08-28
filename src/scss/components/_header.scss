@@ -45,3 +45,14 @@
         }
     }
 }
+
+@media(max-width: 960px) {
+    .#{$kr}-header{
+        $header:&;
+        &--boxed{
+            #{$header}__top{               
+                width:auto;
+            }           
+        }
+    }
+}

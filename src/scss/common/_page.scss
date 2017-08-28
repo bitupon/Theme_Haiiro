@@ -18,11 +18,8 @@
 	}
 
 	&-content{	
-		margin: 0 auto;
+		margin: 0 auto;	
 		
-		//height: calc(100% - 123px);
-	
-		//overflow: auto;
 	}
 
 	&-page{		
@@ -39,5 +36,16 @@
     	font-size: 12px;
     	padding: 4px;
 		display: inline-block;
+	}
+}
+
+@media(max-width: 960px) {
+    
+	.#{$kr}{
+		&-page{	
+			&--boxed{
+				width:auto;
+			}
+		}		
 	}
 }

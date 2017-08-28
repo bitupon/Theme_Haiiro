@@ -4,7 +4,7 @@
 */
 
 .#{$kr}{
-	&-navigation{
+	&-nav{
 		$nav:&;	
 		
 		@extend #list;
@@ -149,7 +149,7 @@
 					transition: all $tr-medium;
 					&:hover{
 						background-color: #d0d1d4;
-						color:$pri-color;
+						color:map-get($theme, pri-color);
 					}
 				}
 				
