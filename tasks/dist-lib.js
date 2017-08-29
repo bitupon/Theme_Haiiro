@@ -9,7 +9,7 @@ module.exports = function (gulp, plugins,project) {
         return gulp.src([
                 //'./dist/libs/*/dist/*/*.*',
                 './dist/libs/jquery/dist/jquery.min.js',
-                './dist/libs/bootstrap/dist/*/*.*',              
+                './dist/libs/bootstrap/*/*.*',              
                 './dist/libs/font-awesome/*/*.*'                
                 ], {base: './dist/'})
             .pipe(gulp.dest(project.app))

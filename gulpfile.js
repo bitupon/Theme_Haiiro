@@ -11,21 +11,17 @@ var gulp = require('gulp'),
         cssMin: './dist/css/',
         scriptsMin:'./dist/js/',
         lib:'./dist/libs/',
-        deploy: '.deploy/'
-    };
-
-
-
+        deploy: './deploy/'
+    },
+    clean = require('del');
 
 /*
  * @task: Complier Tasks
  */
 
-    gulp.task('sass', require('./tasks/sass')(gulp, plugins,paths));
+    gulp.task('sass', require('./tasks/sass')(gulp, plugins,paths,clean));
 
-    gulp.task('scripts', require('./tasks/scripts')(gulp, plugins,paths));
-
-
+    gulp.task('scripts', require('./tasks/scripts')(gulp, plugins,paths,clean));
 
 
 /*
@@ -59,7 +55,7 @@ var gulp = require('gulp'),
  /*
   * @task: Move everything from App to Deploy
   */
-    gulp.task('deploy', require('./tasks/deploy')(gulp, plugins,project));
+    gulp.task('deploy', require('./tasks/deploy')(gulp, plugins,project,clean));
 
 
 
@@ -67,7 +63,7 @@ var gulp = require('gulp'),
  /*
   * @task: Move everything from App to Deploy after it processed all to app
   */
-    gulp.task('provision', gulp.series('app', require('./tasks/deploy')(gulp, plugins,project)));
+    gulp.task('provision', gulp.series('app', require('./tasks/deploy')(gulp, plugins,project,clean)));
 
 
 

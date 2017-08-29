@@ -15,6 +15,7 @@
   "author": "Bitupon Chetia",
   "license": "ISC",
   "devDependencies": {
+    "del": "^3.0.0",
     "gulp": "github:gulpjs/gulp#4.0",
     "gulp-clean": "^0.3.2",
     "gulp-concat": "^2.6.1",
@@ -22,6 +23,7 @@
     "gulp-notify": "^3.0.0",
     "gulp-sass": "^3.1.0",
     "gulp-uglify": "^2.0.1",
-    "run-sequence": "^2.1.0"
+    "run-sequence": "^2.1.0",
+    "vinyl-paths": "^2.1.0"
   }
 }

@@ -3,7 +3,7 @@
  * Concatenates all javascripts file provided into scriptArr and puts them into DIST file.
  */
 
- module.exports = function (gulp, plugins,paths) {
+ module.exports = function (gulp, plugins,paths,clean) {
     var scriptsArr = [
         paths.scripts + 'scripts1.js',    
         paths.scripts + 'scripts2.js',     
@@ -11,6 +11,7 @@
 
    
     return function () {
+         clean([paths.scriptsMin]);
         return gulp.src(scriptsArr)
             .pipe(plugins.concat('scripts-all.js'))
             .pipe(plugins.uglify())

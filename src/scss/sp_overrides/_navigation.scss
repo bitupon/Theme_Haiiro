@@ -49,6 +49,7 @@
 			
 
 			.ms-core-listMenu-item{
+				position: relative;
 				display: inline-block;
 				padding: 11px 20px;
 				color: #fff!important;
@@ -58,6 +59,7 @@
 				transition: color $tr-medium;
 				cursor: pointer;
 				font-weight: 400;
+				float: left;
 
 				&:hover{
 					color: #12aa15!important;				
@@ -139,6 +141,7 @@
 				}			
 
 				.dynamic-children.additional-background{
+					padding: 0;
 					background-image: none;
 					&:before{
 						@extend .#{$kr}-icn-fa;
@@ -218,6 +221,7 @@
 					font-weight: 400;
 					transition: color $tr-medium;
 					cursor: pointer;
+					float: none;
 
 					&:hover{
 						color: #12aa15!important;	

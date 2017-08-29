@@ -1189,6 +1189,7 @@ textarea.form-control {
       left: 0px !important;
       overflow: inherit; }
   .kr-navigation .ms-core-listMenu-root .ms-core-listMenu-item {
+    position: relative;
     display: inline-block;
     padding: 11px 20px;
     color: #fff !important;
@@ -1197,7 +1198,8 @@ textarea.form-control {
     font-size: 14px;
     transition: color 0.5s;
     cursor: pointer;
-    font-weight: 400; }
+    font-weight: 400;
+    float: left; }
     .kr-navigation .ms-core-listMenu-root .ms-core-listMenu-item:hover {
       color: #12aa15 !important; }
     .kr-navigation .ms-core-listMenu-root .ms-core-listMenu-item.active, .kr-navigation .ms-core-listMenu-root .ms-core-listMenu-item.ms-core-listMenu-selected {
@@ -1249,6 +1251,7 @@ textarea.form-control {
         left: 20px;
         z-index: 10; }
     .kr-navigation .ms-core-listMenu-root .ms-core-listMenu-item .dynamic-children.additional-background {
+      padding: 0;
       background-image: none; }
       .kr-navigation .ms-core-listMenu-root .ms-core-listMenu-item .dynamic-children.additional-background:before {
         content: "\f107";
@@ -1279,7 +1282,8 @@ textarea.form-control {
     font-size: 14px;
     font-weight: 400;
     transition: color 0.5s;
-    cursor: pointer; }
+    cursor: pointer;
+    float: none; }
     .kr-navigation .ms-core-listMenu-root .ms-core-listMenu-item:hover {
       color: #12aa15 !important;
       background-color: #0b3165 !important; }
