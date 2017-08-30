@@ -72,7 +72,7 @@ var gulp = require('gulp'),
  */
    
 
-    gulp.task('serve-css', gulp.parallel('sass', 'dist-css'), function() {
+    gulp.task('serve-css', gulp.series('sass', 'dist-css'), function() {
         gulp.watch(['src/scss/**/*.scss'],  gulp.parallel('sass', 'dist-css'));
     });
 

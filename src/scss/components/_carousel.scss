@@ -32,16 +32,17 @@
             left:initial;
             background: none;
             background-image: none!important;
+            text-shadow: 0 1px 2px rgba(0,0,0,.6);
 
             .fa{
                 font-size: 40px;
             }
 
-            &.left{
+            &.left, &.carousel-control-prev{
                 right: 40px;
             }
 
-            &.right{
+            &.right, &.carousel-control-next{
                 right: 10px;
             }
         }

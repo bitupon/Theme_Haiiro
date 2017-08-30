@@ -66,11 +66,12 @@
         background-color: #edeef0;
         transition: all $tr-fast;
         &:focus{
-            background-color: #f5f5f5!important;
+            background-color: #dcdcdc!important;
             box-shadow: none;
             outline: none;
         }
 
+        //Sizes
         &--sm{
             height: 25px;
             font-size: 12px;
@@ -84,6 +85,28 @@
             height: 50px;
         }       
         
+
+        //Variations
+        &--bordered{
+            border: 1px solid #dcdcdc !important;
+            background: transparent;
+             &:focus{
+                background-color: #f5f5f5!important;
+                box-shadow: none;
+                outline: none;
+            }
+        }
+
+        &--outlined{
+            border: 1px solid #dcdcdc !important;
+            background: transparent;
+             &:focus{
+                border: 1px solid #7ab844 !important;
+                box-shadow: none;
+                outline: none;
+                background-color: transparent!important;
+            }
+        }
     }
 }
 

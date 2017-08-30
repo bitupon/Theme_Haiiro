@@ -816,7 +816,7 @@ ul {
   background-color: #edeef0;
   transition: all 0.9s; }
   .form-control:focus {
-    background-color: #f5f5f5 !important;
+    background-color: #dcdcdc !important;
     box-shadow: none;
     outline: none; }
   .form-control--sm, .input-group--sm .form-control {
@@ -826,6 +826,21 @@ ul {
     height: 40px; }
   .form-control--lg {
     height: 50px; }
+  .form-control--bordered {
+    border: 1px solid #dcdcdc !important;
+    background: transparent; }
+    .form-control--bordered:focus {
+      background-color: #f5f5f5 !important;
+      box-shadow: none;
+      outline: none; }
+  .form-control--outlined {
+    border: 1px solid #dcdcdc !important;
+    background: transparent; }
+    .form-control--outlined:focus {
+      border: 1px solid #7ab844 !important;
+      box-shadow: none;
+      outline: none;
+      background-color: transparent !important; }
 
 .input-group .input-group-addon {
   border-radius: 0;
@@ -862,7 +877,9 @@ textarea.form-control {
 .kr-panel {
   border-radius: 0;
   border: solid 1px #f1f1f1;
-  box-shadow: 0 2px 1px rgba(0, 0, 0, 0.07); }
+  box-shadow: 0 2px 1px rgba(0, 0, 0, 0.07);
+  margin-bottom: 20px;
+  background-color: #fff; }
   .kr-panel .panel-heading, .kr-panel .panel-footer {
     padding: 0px 15px;
     height: 56px;
@@ -877,6 +894,8 @@ textarea.form-control {
     margin: 0px 15px;
     border-top: dashed 1px #ccc;
     padding: 0; }
+  .kr-panel .panel-body {
+    padding: 15px; }
   .kr-panel h3.panel-title {
     color: #1353aa !important;
     font-weight: 600;
@@ -929,12 +948,13 @@ textarea.form-control {
     right: 10px;
     left: initial;
     background: none;
-    background-image: none !important; }
+    background-image: none !important;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6); }
     .kr-carousel__control .fa {
       font-size: 40px; }
-    .kr-carousel__control.left {
+    .kr-carousel__control.left, .kr-carousel__control.carousel-control-prev {
       right: 40px; }
-    .kr-carousel__control.right {
+    .kr-carousel__control.right, .kr-carousel__control.carousel-control-next {
       right: 10px; }
   .kr-carousel__caption {
     bottom: 0;
@@ -978,12 +998,15 @@ textarea.form-control {
     background: none;
     background-image: none !important;
     text-shadow: none;
-    color: #525c68 !important; }
+    color: #525c68 !important;
+    cursor: pointer;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
+    z-index: 1000000; }
     .kr-ticker__control .fa {
       font-size: 30px; }
-    .kr-ticker__control.left {
-      right: 40px; }
-    .kr-ticker__control.right {
+    .kr-ticker__control.left, .kr-ticker__control.carousel-control-prev {
+      right: 30px; }
+    .kr-ticker__control.right, .kr-ticker__control.carousel-control-next {
       right: 10px; }
   .kr-ticker__caption {
     top: 0;
