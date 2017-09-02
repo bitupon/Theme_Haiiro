@@ -73,11 +73,11 @@ var gulp = require('gulp'),
    
 
     gulp.task('serve-css', gulp.series('sass', 'dist-css'), function() {
-        gulp.watch(['src/scss/**/*.scss'],  gulp.parallel('sass', 'dist-css'));
+        gulp.watch('src/scss/**/*.scss',  gulp.parallel('sass', 'dist-css'));
     });
 
      gulp.task('serve', gulp.series('serve-css', 'dist-lib', 'dist-css'), function() {
-        gulp.watch(['src/scss/**/*.scss'],  gulp.parallel('sass', 'dist-css'));
+        gulp.watch(['src/scss/**/*.scss'], ['sass', 'dist-css']);
         //gulp.watch(['src/scripts/*.js'], ['scripts', 'dist-js']);
     });
 

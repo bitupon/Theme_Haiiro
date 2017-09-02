@@ -1,0 +1,164 @@
+/*
+	* _accordion.scss - UI Block Component
+	*
+*/
+
+
+.#{$kr}-accordion{	
+    $accordion :&;
+	position: relative;
+    border-radius: 0;
+    
+    &__panel{
+        position: relative;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        min-width: 0;
+        word-wrap: break-word;       
+        background-clip: border-box;
+        border-radius: 0;
+        border: solid 1px #f1f1f1;
+        box-shadow: 0 2px 1px rgba(0, 0, 0, 0.07);
+        margin-bottom: 5px;
+        background-color: #fff;
+    }
+
+    &__header{     
+        position: relative;
+        padding: 0px 15px;
+        height: 56px;
+        line-height: 56px;
+        border-radius: 0;       
+    }
+
+    &__title{
+        color: map-get($theme, pri-color)!important;
+        font-weight: 600;
+        border-bottom: solid 1px #f1f1f1;
+        line-height: 56px;
+
+        &:before{
+            content: "";
+            display: inline-block;
+            height: 22px;
+            width: 2px;
+            background: #1353aa !important;
+            position: absolute;
+            left: 0;
+            top: 15px;
+        }
+        
+        margin-bottom: .5rem;
+         a{
+            color:  map-get($theme, pri-color-dk)!important;
+
+            &:focus,&:active,&:hover{
+                color: map-get($theme, pri-color-dk)!important;
+            }
+        }
+    }
+
+    &__body{
+        -ms-flex: 1 1 auto;
+        flex: 1 1 auto;
+        padding: 1.25rem;
+    }
+    
+    &--light{
+        #{$accordion}{
+            &__panel{             
+                box-shadow: none;
+            }
+
+            &__header{               
+                margin-bottom: 0;              
+                border-bottom: 1px solid #f1f1f1;
+                background-color:  #f1f1f1;
+                a{
+                    color: #fff!important;
+
+                    &:focus,&:active,&:hover{
+                        color:#e1e1e1!important;
+                    }
+                }
+            }
+
+            &__title{
+             
+                &:before{
+                    display: none;                   
+                }               
+              
+                a{
+                    color:  map-get($theme, pri-color-dk)!important;
+
+                    &:focus,&:active,&:hover{
+                        color: map-get($theme, pri-color-dk)!important;
+                    }
+                }
+            }
+         }
+    }
+
+     &--dark{
+        #{$accordion}{
+            &__panel{             
+                box-shadow: none;
+            }
+
+            &__header{               
+                margin-bottom: 0;              
+                border-bottom: 1px solid map-get($theme, pri-color-dk);
+                background-color:  map-get($theme, pri-color);                
+            }
+
+             &__title{             
+                &:before{
+                    display: none;                   
+                }               
+              
+                a{
+                    color: #fff!important;
+                    &:focus,&:active,&:hover{
+                         color:#e1e1e1!important;
+                    }
+                }
+            }
+         }       
+    }
+    
+     &--transparent{
+        #{$accordion}{
+            &__panel{             
+                box-shadow: none;
+            }
+
+            &__header{               
+                margin-bottom: 0;              
+                border-bottom: 1px solid #f1f1f1;
+                background-color: transparent;                
+            }
+
+            &__title{
+                border: none;
+                &:before{
+                    display: none;                   
+                }               
+              
+                a{
+                    color:  map-get($theme, pri-color-dk)!important;
+
+                    &:focus,&:active,&:hover{
+                        color: map-get($theme, pri-color-dk)!important;
+                    }
+                }
+            }
+         }       
+    }
+
+}
+
+
+	

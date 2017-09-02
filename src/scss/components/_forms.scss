@@ -101,7 +101,7 @@
             border: 1px solid #dcdcdc !important;
             background: transparent;
              &:focus{
-                border: 1px solid #7ab844 !important;
+                border: 1px solid map-get($theme, sec-color)!important;
                 box-shadow: none;
                 outline: none;
                 background-color: transparent!important;

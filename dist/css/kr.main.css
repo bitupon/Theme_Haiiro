@@ -837,7 +837,7 @@ ul {
     border: 1px solid #dcdcdc !important;
     background: transparent; }
     .form-control--outlined:focus {
-      border: 1px solid #7ab844 !important;
+      border: 1px solid #12aa15 !important;
       box-shadow: none;
       outline: none;
       background-color: transparent !important; }
@@ -927,6 +927,144 @@ textarea.form-control {
   .kr-panel--gray .panel-heading {
     color: #fff;
     background-color: #80878f; }
+
+/*
+	* _accordion.scss - UI Block Component
+	*
+*/
+.kr-accordion {
+  position: relative;
+  border-radius: 0; }
+  .kr-accordion__panel {
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-clip: border-box;
+    border-radius: 0;
+    border: solid 1px #f1f1f1;
+    box-shadow: 0 2px 1px rgba(0, 0, 0, 0.07);
+    margin-bottom: 5px;
+    background-color: #fff; }
+  .kr-accordion__header {
+    position: relative;
+    padding: 0px 15px;
+    height: 56px;
+    line-height: 56px;
+    border-radius: 0; }
+  .kr-accordion__title {
+    color: #1353aa !important;
+    font-weight: 600;
+    border-bottom: solid 1px #f1f1f1;
+    line-height: 56px;
+    margin-bottom: .5rem; }
+    .kr-accordion__title:before {
+      content: "";
+      display: inline-block;
+      height: 22px;
+      width: 2px;
+      background: #1353aa !important;
+      position: absolute;
+      left: 0;
+      top: 15px; }
+    .kr-accordion__title a {
+      color: #0b3165 !important; }
+      .kr-accordion__title a:focus, .kr-accordion__title a:active, .kr-accordion__title a:hover {
+        color: #0b3165 !important; }
+  .kr-accordion__body {
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    padding: 1.25rem; }
+  .kr-accordion--light .kr-accordion__panel {
+    box-shadow: none; }
+  .kr-accordion--light .kr-accordion__header {
+    margin-bottom: 0;
+    border-bottom: 1px solid #f1f1f1;
+    background-color: #f1f1f1; }
+    .kr-accordion--light .kr-accordion__header a {
+      color: #fff !important; }
+      .kr-accordion--light .kr-accordion__header a:focus, .kr-accordion--light .kr-accordion__header a:active, .kr-accordion--light .kr-accordion__header a:hover {
+        color: #e1e1e1 !important; }
+  .kr-accordion--light .kr-accordion__title:before {
+    display: none; }
+  .kr-accordion--light .kr-accordion__title a {
+    color: #0b3165 !important; }
+    .kr-accordion--light .kr-accordion__title a:focus, .kr-accordion--light .kr-accordion__title a:active, .kr-accordion--light .kr-accordion__title a:hover {
+      color: #0b3165 !important; }
+  .kr-accordion--dark .kr-accordion__panel {
+    box-shadow: none; }
+  .kr-accordion--dark .kr-accordion__header {
+    margin-bottom: 0;
+    border-bottom: 1px solid #0b3165;
+    background-color: #1353aa; }
+  .kr-accordion--dark .kr-accordion__title:before {
+    display: none; }
+  .kr-accordion--dark .kr-accordion__title a {
+    color: #fff !important; }
+    .kr-accordion--dark .kr-accordion__title a:focus, .kr-accordion--dark .kr-accordion__title a:active, .kr-accordion--dark .kr-accordion__title a:hover {
+      color: #e1e1e1 !important; }
+  .kr-accordion--transparent .kr-accordion__panel {
+    box-shadow: none; }
+  .kr-accordion--transparent .kr-accordion__header {
+    margin-bottom: 0;
+    border-bottom: 1px solid #f1f1f1;
+    background-color: transparent; }
+  .kr-accordion--transparent .kr-accordion__title {
+    border: none; }
+    .kr-accordion--transparent .kr-accordion__title:before {
+      display: none; }
+    .kr-accordion--transparent .kr-accordion__title a {
+      color: #0b3165 !important; }
+      .kr-accordion--transparent .kr-accordion__title a:focus, .kr-accordion--transparent .kr-accordion__title a:active, .kr-accordion--transparent .kr-accordion__title a:hover {
+        color: #0b3165 !important; }
+
+/*
+	* _alert.scss - UI Block Component
+	*
+*/
+.kr-alert {
+  position: relative;
+  border-radius: 0; }
+  .kr-alert:before {
+    content: "";
+    display: inline-block;
+    height: 22px;
+    width: 2px;
+    background: #1353aa !important;
+    position: absolute;
+    left: -1px;
+    top: 9px; }
+  .kr-alert--l-bordered:before {
+    width: 4px;
+    height: auto;
+    left: -1px;
+    top: -1px;
+    bottom: -1px; }
+  .kr-alert.alert-default {
+    border: solid 1px #f1f1f1; }
+    .kr-alert.alert-default:before {
+      background: #1353aa !important; }
+  .kr-alert.alert-primary:before {
+    background-color: #004085 !important; }
+  .kr-alert.alert-secondary:before {
+    background-color: #464a4e !important; }
+  .kr-alert.alert-success:before {
+    background-color: #155724 !important; }
+  .kr-alert.alert-danger:before {
+    background-color: #721c24 !important; }
+  .kr-alert.alert-warning:before {
+    background-color: #856404 !important; }
+  .kr-alert.alert-info:before {
+    background-color: #0c5460 !important; }
+  .kr-alert.alert-light {
+    border: solid 1px #ddd; }
+    .kr-alert.alert-light:before {
+      background-color: #818182 !important; }
+  .kr-alert.alert-dark:before {
+    background-color: #1b1e21 !important; }
 
 /*
 	* _carousel.scss - UI Carousel Component

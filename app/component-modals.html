@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Kiiro - Intranet Offerings</title>
+	<link rel="stylesheet" href="libs/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/kr.main.css">
+
+	
+	<script src="libs/jquery/dist/jquery.min.js"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+
+	<script src="libs/bootstrap/js/bootstrap.min.js"></script>	
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+</head>
+<body>
+	<!-- Start:Site Toolbar  -->
+	<section class="kr-toolbar" id="toolbar">
+		<div class="kr-toolbar__content">
+			<label class="kr-toolbar__content-label">Background</label>
+			<div class="checkbox m-t-0">				
+				<label>
+					<input type="checkbox" name="background" value="true">
+					Background
+				</label>
+			</div>
+			
+			<label class="kr-toolbar__content-label">Layout</label>
+			<div class="radio m-t-0">				
+				<label>
+					<input type="radio" name="layout" value="boxed" checked>
+					Boxed
+				</label>
+			</div>
+			<div class="radio">
+				<label>
+					<input type="radio" name="layout" value="fluid">
+					Fluid
+				</label>
+			</div>
+
+			<label class="kr-toolbar__content-label m-t-2">Theme</label>
+			<div class="radio m-t-0">
+				<label>
+					<input type="radio" name="theme"  value="blue" checked>
+					Blue
+				</label>
+			</div>
+			<div class="radio">
+				<label>
+					<input type="radio" name="theme" value="orange">
+					Orange
+				</label>
+			</div>
+			<div class="radio">
+				<label>
+					<input type="radio" name="theme"  value="Gray">
+					Gray
+				</label>
+			</div>
+		</div>
+		<div class="kr-toolbar__toggler" id="toolbarToggler">
+			<i class="fa fa-angle-down" aria-hidden="true"></i>
+		</div>
+	</section>
+	<!-- End:Site Toolbar  -->
+
+
+	<main class="kr-main">
+		<!-- Start: KR Header-->
+		<header class="kr-header kr-header--boxed">
+			<div class="kr-header__top">
+				<div class="kr-header__logo">
+					<img src="./assets/kr-logo.png" alt="logo"/>
+				</div>
+			</div>			
+            <nav class="kr-header__bottom">
+				<div class="kr-nav-wrapper kr-nav-wrapper--boxed"> 
+					<ul class="kr-nav">
+						<li><a  class="kr-nav__item" href="demo.html">Home</a></li>
+						<li>
+							<a href="" class="kr-nav__item">HR <i class="fa fa-angle-down m-r-1" aria-hidden="true"></i></a>
+							<ul class="kr-nav__menu">
+								<li><a class="kr-nav__menu-item" href="forms.html">Form Elements</a></li>
+								<li><a class="kr-nav__menu-item" href="list.html">List</a></li>						
+								<li><a class="kr-nav__menu-item" href="panel.html">Panel and Modules</a></li>
+								<li><a class="kr-nav__menu-item" href="tiles.html">Tiles</a></li>
+								<li><a class="kr-nav__menu-item" href="carousel.html">Carousel</a></li>
+							</ul>
+						</li>
+						<li><a href="" class="kr-nav__item">Admin</a></li>
+						<li><a href="" class="kr-nav__item">IT</a></li>
+						<li><a href="" class="kr-nav__item">Finance</a></li> 
+						<li><a href="" class="kr-nav__item">S & D</a></li>
+						<li><a href="" class="kr-nav__item">M & M</a></li>
+						<li><a href="" class="kr-nav__item">Reports</a></li>
+						<li><a href="" class="kr-nav__item">News and Events</a></li>
+					</ul>
+				</div>
+			</nav>
+		</header>
+		<!-- End: KR Header-->
+		<div class="kr-content">
+			<!--Start: KR PageLayout -->
+			<div class="kr-page kr-page--boxed">
+				<div class="row">
+					<div class="col">
+						<div id="accordion" role="tablist">
+							<div class="card">
+								<div class="card-header" role="tab" id="headingOne">
+								<h5 class="mb-0">
+									<a data-toggle="collapse" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+									Collapsible Group Item #1
+									</a>
+								</h5>
+								</div>
+
+								<div id="collapseOne" class="collapse show" role="tabpanel" aria-labelledby="headingOne" data-parent="#accordion">
+								<div class="card-body">
+									Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+								</div>
+								</div>
+							</div>
+							<div class="card">
+								<div class="card-header" role="tab" id="headingTwo">
+								<h5 class="mb-0">
+									<a class="collapsed" data-toggle="collapse" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+									Collapsible Group Item #2
+									</a>
+								</h5>
+								</div>
+								<div id="collapseTwo" class="collapse" role="tabpanel" aria-labelledby="headingTwo" data-parent="#accordion">
+								<div class="card-body">
+									Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+								</div>
+								</div>
+							</div>
+							<div class="card">
+								<div class="card-header" role="tab" id="headingThree">
+								<h5 class="mb-0">
+									<a class="collapsed" data-toggle="collapse" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+									Collapsible Group Item #3
+									</a>
+								</h5>
+								</div>
+								<div id="collapseThree" class="collapse" role="tabpanel" aria-labelledby="headingThree" data-parent="#accordion">
+								<div class="card-body">
+									Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+								</div>
+								</div>
+							</div>
+						</div>				
+					</div>	
+					<div class="col">
+						<form>
+							<h3>Form Controls</h3>
+							<div class="form-group">
+								<label for="exampleFormControlInput1">Email address</label>
+								<input type="email" class="form-control form-control--bordered" id="exampleFormControlInput1" placeholder="name@example.com">
+							</div>
+							<div class="form-group">
+								<label for="exampleFormControlSelect1">Example select</label>
+								<select class="form-control form-control--bordered" id="exampleFormControlSelect1">
+								<option>1</option>
+								<option>2</option>
+								<option>3</option>
+								<option>4</option>
+								<option>5</option>
+								</select>
+							</div>
+							<div class="form-group">
+								<label for="exampleFormControlSelect2">Example multiple select</label>
+								<select multiple class="form-control form-control--bordered" id="exampleFormControlSelect2">
+								<option>1</option>
+								<option>2</option>
+								<option>3</option>
+								<option>4</option>
+								<option>5</option>
+								</select>
+							</div>
+							<div class="form-group">
+								<label for="exampleFormControlTextarea1">Example textarea</label>
+								<textarea class="form-control form-control--bordered" id="exampleFormControlTextarea1" rows="3"></textarea>
+							</div>
+						</form>						
+					</div>		
+					<div class="col">
+						<form>
+							<h3>Form Controls</h3>
+							<div class="form-group">
+								<label for="exampleFormControlInput1">Email address</label>
+								<input type="email" class="form-control form-control--outlined" id="exampleFormControlInput1" placeholder="name@example.com">
+							</div>
+							<div class="form-group">
+								<label for="exampleFormControlSelect1">Example select</label>
+								<select class="form-control form-control--outlined" id="exampleFormControlSelect1">
+								<option>1</option>
+								<option>2</option>
+								<option>3</option>
+								<option>4</option>
+								<option>5</option>
+								</select>
+							</div>
+							<div class="form-group">
+								<label for="exampleFormControlSelect2">Example multiple select</label>
+								<select multiple class="form-control form-control--outlined" id="exampleFormControlSelect2">
+								<option>1</option>
+								<option>2</option>
+								<option>3</option>
+								<option>4</option>
+								<option>5</option>
+								</select>
+							</div>
+							<div class="form-group">
+								<label for="exampleFormControlTextarea1">Example textarea</label>
+								<textarea class="form-control form-control--outlined" id="exampleFormControlTextarea1" rows="3"></textarea>
+							</div>
+						</form>						
+					</div>				
+				</div>				
+			</div>
+			<!--End: KR PageLayout -->
+		</div>
+		<footer>
+
+		</footer>
+
+	</main>
+	<script>
+		$(document).ready(function(){
+			
+
+			$("#toolbarToggler").on('click',function(){
+				$("#toolbar").toggleClass("kr-toolbar--active")
+			});
+
+			$("input[type='checkbox'][name='background']").on('change',function(e){
+				if($(e.currentTarget).prop('checked')){
+					$(".kr-main").addClass('kr-main--bg');
+				}else{
+					$(".kr-main").removeClass('kr-main--bg');
+				}
+			})
+
+			$("input[type='radio'][name='layout']").on('change',function(e){
+				if($(e.currentTarget).prop('checked')){
+					switch ($(e.currentTarget).val()){
+						case 'fluid':
+							$(".kr-header").removeClass('kr-header--boxed');
+							$(".kr-nav-wrapper").removeClass('kr-nav-wrapper--boxed');
+							$(".kr-page").removeClass('kr-page--boxed');							
+						break;
+						case 'boxed':
+							$(".kr-header").addClass('kr-header--boxed');
+							$(".kr-nav-wrapper").addClass('kr-nav-wrapper--boxed');
+							$(".kr-page").addClass('kr-page--boxed');
+						break;
+					}
+				}				
+			})
+
+			$("input[type='radio'][name='theme']").on('change',function(e){
+				if($(e.currentTarget).prop('checked')){
+					switch ($(e.currentTarget).val()){
+						case 'blue':
+							location.reload();
+						break;
+						case 'orange':
+							loadTheme("css/kr.theme.orange.css") ////dynamically load and add this .css file
+						break;
+					}
+				}		
+
+				l
+			})
+			
+
+			function loadTheme(filename){
+				
+				
+				var fileref=document.createElement("link")
+				fileref.setAttribute("rel", "stylesheet")
+				fileref.setAttribute("type", "text/css")
+				fileref.setAttribute("href", filename)
+			
+				if (typeof fileref!="undefined")
+					document.getElementsByTagName("head")[0].appendChild(fileref)
+			}
+			
+			
+			
+
+
+		})
+	</script>
+</body>
+</html>
+

@@ -1,0 +1,84 @@
+/*
+	* _alert.scss - UI Block Component
+	*
+*/
+
+
+.#{$kr}-alert{	
+	position: relative;
+    border-radius: 0;
+    
+    &:before{
+        content: "";
+        display: inline-block;
+        height: 22px;
+        width: 2px;
+        background: #1353aa !important;
+        position: absolute;
+        left: -1px;
+        top: 9px;
+    }
+
+    &--l-bordered{
+        &:before{                      
+            width: 4px;           
+            height: auto;
+            left: -1px;
+            top: -1px;
+            bottom: -1px;
+        }
+
+    }
+
+    &.alert-default{
+        border: solid 1px #f1f1f1;
+        &:before{
+            background: #1353aa !important;
+        }
+    }
+
+    &.alert-primary{
+        &:before{
+            background-color: #004085!important;
+        }
+    }
+    &.alert-secondary{
+        &:before{
+            background-color: #464a4e!important;
+        }
+    }
+    &.alert-success{
+        &:before{
+            background-color: #155724!important;
+        }
+    }
+    &.alert-danger{
+        &:before{
+            background-color: #721c24!important;
+        }
+    }
+    &.alert-warning{
+        &:before{
+            background-color: #856404!important;
+        }
+    }
+    &.alert-info{
+        &:before{
+            background-color: #0c5460!important;
+        }
+    }
+    &.alert-light{
+        border: solid 1px #ddd;
+        &:before{
+            background-color: #818182!important;
+        }
+    }
+    &.alert-dark{
+        &:before{
+            background-color: #1b1e21!important;
+        }
+    }
+}
+
+
+	
