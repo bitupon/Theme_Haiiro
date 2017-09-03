@@ -5,41 +5,33 @@
 
 
 .#{$kr}-btn{    
-
-    &-link{
-        background: transparent;
-        color: map-get($theme, pri-color)!important;
-        padding: 0;
-        font-weight: 400;
-        font-size: 14px;
-        transition: color $tr-medium;
-
+    border-radius: 0;
+    padding-left: 20px;
+    padding-right: 20px;
+    cursor: pointer;
+   
+   &--default{
+        background-color: map-get($theme, pri-color);
+        color: #fff;
         &:hover{
-            color:map-get($theme, pri-color-dk-hover)!important;
+             background-color: map-get($theme, pri-color-dk);
         }
+   }
 
-        &:active,&:focus{
-            color: map-get($theme, pri-color)!important;
-            outline: none!important;
-            box-shadow: none;
+   &--outlined{
+        background-color: transparent;
+        border-color: map-get($theme, pri-color);
+        color: map-get($theme, pri-color);
+        &:hover{
+            color: #fff;
+             background-color: map-get($theme, pri-color-dk);
         }
+   }
 
-        &--primary{
-            
-            color: map-get($theme, sec-color)!important;
-            
-            &:hover{
-                color:map-get($theme, sec-color-dk-hover)!important;
-            }
-
-            &:active,&:focus{
-                color: map-get($theme, sec-color)!important;
-                outline: none!important;
-                box-shadow: none;
-            }
-        }
+    &:focus{
+        outline: none;
+        box-shadow: none;
     }
-
 }
 
 .form{
@@ -61,12 +53,14 @@
     &-control{
         border-radius:0;
         padding: 6px 12px!important;
-        border: 1px solid transparent!important;
+        border: 1px solid #edeef0!important;
         box-shadow: none;
         background-color: #edeef0;
         transition: all $tr-fast;
+        background-clip: border-box;
         &:focus{
             background-color: #dcdcdc!important;
+            border: 1px solid #dcdcdc!important;
             box-shadow: none;
             outline: none;
         }
@@ -111,49 +105,6 @@
 }
 
 
-.input{
-    &-group{
-        $inpGrp:&;
-        #{$inpGrp}-addon{
-            border-radius:0;
-            background: #80878f;
-            border: none;
-            color: #fff;
-            > button{
-                background: transparent;
-                border: none;
-                outline: none;               
-                color: #fff;
-                padding: 0;
-                min-width: 0;
-                margin: 0;
-                font-size: inherit;
-                &[disabled]{
-                    .fa{
-                        color:#ccc;
-                    }
-                }
-            }
-        }  
-
-        &--sm{
-            height: 25px;
-            .form{
-                &-control{
-                    @extend .form-control--sm;
-                }
-            }
-
-            #{$inpGrp}-addon{
-                font-size: 10px;
-            } 
-
-            &-w{                
-                width: 200px;
-            }
-        }      
-    }
-}
 
 textarea{
     &.form-control{

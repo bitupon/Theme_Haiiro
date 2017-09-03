@@ -777,27 +777,26 @@ ul {
 	* _forms.scss - UI Forms Component
 	*
 */
-.kr-btn-link {
-  background: transparent;
-  color: #1353aa !important;
-  padding: 0;
-  font-weight: 400;
-  font-size: 14px;
-  transition: color 0.5s; }
-  .kr-btn-link:hover {
-    color: #003d75 !important; }
-  .kr-btn-link:active, .kr-btn-link:focus {
-    color: #1353aa !important;
-    outline: none !important;
+.kr-btn {
+  border-radius: 0;
+  padding-left: 20px;
+  padding-right: 20px;
+  cursor: pointer; }
+  .kr-btn--default {
+    background-color: #1353aa;
+    color: #fff; }
+    .kr-btn--default:hover {
+      background-color: #0b3165; }
+  .kr-btn--outlined {
+    background-color: transparent;
+    border-color: #1353aa;
+    color: #1353aa; }
+    .kr-btn--outlined:hover {
+      color: #fff;
+      background-color: #0b3165; }
+  .kr-btn:focus {
+    outline: none;
     box-shadow: none; }
-  .kr-btn-link--primary {
-    color: #12aa15 !important; }
-    .kr-btn-link--primary:hover {
-      color: #0d7c0f !important; }
-    .kr-btn-link--primary:active, .kr-btn-link--primary:focus {
-      color: #12aa15 !important;
-      outline: none !important;
-      box-shadow: none; }
 
 .form-group > label {
   font-weight: 400;
@@ -811,15 +810,17 @@ ul {
 .form-control {
   border-radius: 0;
   padding: 6px 12px !important;
-  border: 1px solid transparent !important;
+  border: 1px solid #edeef0 !important;
   box-shadow: none;
   background-color: #edeef0;
-  transition: all 0.9s; }
+  transition: all 0.9s;
+  background-clip: border-box; }
   .form-control:focus {
     background-color: #dcdcdc !important;
+    border: 1px solid #dcdcdc !important;
     box-shadow: none;
     outline: none; }
-  .form-control--sm, .input-group--sm .form-control {
+  .form-control--sm {
     height: 25px;
     font-size: 12px; }
   .form-control--md {
@@ -842,12 +843,20 @@ ul {
       outline: none;
       background-color: transparent !important; }
 
-.input-group .input-group-addon {
+textarea.form-control {
+  max-width: 100%;
+  max-height: 150px; }
+
+/*
+	* _forms.custom.scss - UI Forms Component
+	*
+*/
+.kr-input-group .input-group-addon {
   border-radius: 0;
-  background: #80878f;
+  background: #1353aa;
   border: none;
   color: #fff; }
-  .input-group .input-group-addon > button {
+  .kr-input-group .input-group-addon > button {
     background: transparent;
     border: none;
     outline: none;
@@ -856,19 +865,61 @@ ul {
     min-width: 0;
     margin: 0;
     font-size: inherit; }
-    .input-group .input-group-addon > button[disabled] .fa {
+    .kr-input-group .input-group-addon > button[disabled] .fa {
       color: #ccc; }
+  .kr-input-group .input-group-addon + .input-group-addon {
+    border-left: solid 1px #0b3165; }
 
-.input-group--sm {
-  height: 25px; }
-  .input-group--sm .input-group-addon {
-    font-size: 10px; }
-  .input-group--sm-w {
-    width: 200px; }
+.kr-input-group .input-group-btn {
+  border-radius: 0;
+  background: #1353aa; }
+  .kr-input-group .input-group-btn > button {
+    background: transparent;
+    border: none; }
+    .kr-input-group .input-group-btn > button:focus, .kr-input-group .input-group-btn > button:hover, .kr-input-group .input-group-btn > button:active {
+      background-color: #0b3165;
+      outline: none;
+      box-shadow: none; }
+    .kr-input-group .input-group-btn > button + button {
+      border-left: solid 1px #0b3165; }
+      .kr-input-group .input-group-btn > button + button:focus, .kr-input-group .input-group-btn > button + button:hover, .kr-input-group .input-group-btn > button + button:active {
+        background-color: #0b3165;
+        border-left: solid 1px #0b3165; }
 
-textarea.form-control {
-  max-width: 100%;
-  max-height: 150px; }
+.kr-input-group .dropdown-menu {
+  border-radius: 0; }
+
+.kr-custom-file .custom-file-control {
+  border-radius: 0;
+  padding: 6px 12px !important;
+  border: 1px solid #edeef0 !important;
+  box-shadow: none;
+  background-color: #edeef0;
+  height: auto;
+  line-height: 1.25;
+  transition: all 0.9s; }
+  .kr-custom-file .custom-file-control:before {
+    height: auto;
+    line-height: 1.25;
+    color: #fff;
+    background-color: #1353aa;
+    border-radius: 0; }
+
+.kr-custom-checkbox .custom-control-indicator {
+  border-radius: 0; }
+  .kr-custom-checkbox .custom-control-indicator:focus {
+    outline: none;
+    box-shadow: none; }
+
+.kr-custom-checkbox .custom-control-input:checked ~ .custom-control-indicator {
+  background-color: #1353aa; }
+
+.kr-custom-radio .custom-control-indicator:focus {
+  outline: none;
+  box-shadow: none; }
+
+.kr-custom-radio .custom-control-input:checked ~ .custom-control-indicator {
+  background-color: #1353aa; }
 
 /*
 	* _panel.scss - UI Panel Component
@@ -1299,7 +1350,7 @@ textarea.form-control {
   right: 20px;
   z-index: 1000;
   background-color: #3d3d3d;
-  top: -290px;
+  top: -302px;
   transition: all 0.5s; }
   .kr-toolbar__content {
     color: #fff; }
