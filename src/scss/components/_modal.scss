@@ -1,0 +1,56 @@
+/*
+	* _header.scss - UI Header Component
+	*
+*/
+
+.#{$kr}-modal{
+    $modal:&;
+    &__dialog{
+
+    }
+
+    &__content{
+        border: none;
+        border-radius: 0;
+    }
+
+    &__header{
+        padding: 0px 15px;
+        height: 56px;
+        line-height: 56px;
+        border-radius: 0;
+        border-bottom: none;
+    }
+
+
+    &__title{
+        color:map-get($theme, pri-color)!important;
+        font-weight: 600;
+        border-bottom: solid 1px #f1f1f1;
+        position: relative;
+        line-height: inherit;
+        font-size: 18px;       
+        width: 100%;
+
+        &:before{
+            content: "";
+            display: inline-block;
+            height: 22px;
+            width: 2px;
+            background: #1353aa !important;
+            position: absolute;
+            left: -15px;
+            top: 15px;
+        }
+    }
+
+    &__body{
+
+    }
+
+    &__footer{
+        background: transparent;
+        margin: 0px 15px;
+        border-top: dashed 1px #ccc;
+    }
+}

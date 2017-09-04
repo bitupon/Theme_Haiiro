@@ -797,6 +797,27 @@ ul {
   .kr-btn:focus {
     outline: none;
     box-shadow: none; }
+  .kr-btn-link {
+    background: transparent;
+    color: #1353aa !important;
+    padding: 0;
+    font-weight: 400;
+    font-size: 14px;
+    transition: color 0.5s; }
+    .kr-btn-link:hover {
+      color: #003d75 !important; }
+    .kr-btn-link:active, .kr-btn-link:focus {
+      color: #1353aa !important;
+      outline: none !important;
+      box-shadow: none; }
+    .kr-btn-link--primary {
+      color: #12aa15 !important; }
+      .kr-btn-link--primary:hover {
+        color: #0d7c0f !important; }
+      .kr-btn-link--primary:active, .kr-btn-link--primary:focus {
+        color: #12aa15 !important;
+        outline: none !important;
+        box-shadow: none; }
 
 .form-group > label {
   font-weight: 400;
@@ -920,6 +941,43 @@ textarea.form-control {
 
 .kr-custom-radio .custom-control-input:checked ~ .custom-control-indicator {
   background-color: #1353aa; }
+
+/*
+	* _header.scss - UI Header Component
+	*
+*/
+.kr-modal__content {
+  border-radius: 0; }
+
+.kr-modal__header {
+  padding: 0px 15px;
+  height: 56px;
+  line-height: 56px;
+  border-radius: 0;
+  border-bottom: none; }
+
+.kr-modal__title {
+  color: #1353aa !important;
+  font-weight: 600;
+  border-bottom: solid 1px #f1f1f1;
+  position: relative;
+  line-height: inherit;
+  font-size: 18px;
+  width: 100%; }
+  .kr-modal__title:before {
+    content: "";
+    display: inline-block;
+    height: 22px;
+    width: 2px;
+    background: #1353aa !important;
+    position: absolute;
+    left: -15px;
+    top: 15px; }
+
+.kr-modal__footer {
+  background: transparent;
+  margin: 0px 15px;
+  border-top: dashed 1px #ccc; }
 
 /*
 	* _panel.scss - UI Panel Component

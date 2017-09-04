@@ -32,6 +32,40 @@
         outline: none;
         box-shadow: none;
     }
+
+    &-link{
+        background: transparent;
+        color: map-get($theme, pri-color)!important;
+        padding: 0;
+        font-weight: 400;
+        font-size: 14px;
+        transition: color $tr-medium;
+
+        &:hover{
+            color:map-get($theme, pri-color-dk-hover)!important;
+        }
+
+        &:active,&:focus{
+            color: map-get($theme, pri-color)!important;
+            outline: none!important;
+            box-shadow: none;
+        }
+
+        &--primary{
+            
+            color: map-get($theme, sec-color)!important;
+            
+            &:hover{
+                color:map-get($theme, sec-color-dk-hover)!important;
+            }
+
+            &:active,&:focus{
+                color: map-get($theme, sec-color)!important;
+                outline: none!important;
+                box-shadow: none;
+            }
+        }
+    }
 }
 
 .form{
