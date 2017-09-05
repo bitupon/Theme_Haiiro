@@ -645,6 +645,9 @@ ul {
   padding-bottom: 0px;
   height: 100%; }
 
+input[type=button], input[type=reset], input[type=submit], button {
+  min-width: 0; }
+
 /*
 	* _header.scss - UI Header Component
 	*
@@ -947,6 +950,7 @@ textarea.form-control {
 	*
 */
 .kr-modal__content {
+  border: none;
   border-radius: 0; }
 
 .kr-modal__header {
@@ -1526,7 +1530,7 @@ textarea.form-control {
       .kr-navigation .ms-core-listMenu-root .ms-core-listMenu-item .dynamic-children.additional-background:before {
         content: "\f107";
         position: absolute;
-        right: 20px;
+        right: 0px;
         top: 10px;
         font-size: 18px; }
 

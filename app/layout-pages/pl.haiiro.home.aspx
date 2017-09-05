@@ -1,4 +1,4 @@
-<%@ Page language="C#"   Inherits="Microsoft.SharePoint.Publishing.PublishingLayoutPage,Microsoft.SharePoint.Publishing,Version=16.0.0.0,Culture=neutral,PublicKeyToken=71e9bce111e9429c" meta:progid="SharePoint.WebPartPage.Document" meta:webpartpageexpansion="full" %>
+﻿<%@ Page language="C#"   Inherits="Microsoft.SharePoint.Publishing.PublishingLayoutPage,Microsoft.SharePoint.Publishing,Version=16.0.0.0,Culture=neutral,PublicKeyToken=71e9bce111e9429c" meta:progid="SharePoint.WebPartPage.Document" %>
 <%@ Register Tagprefix="SharePointWebControls" Namespace="Microsoft.SharePoint.WebControls" Assembly="Microsoft.SharePoint, Version=16.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" %> <%@ Register Tagprefix="WebPartPages" Namespace="Microsoft.SharePoint.WebPartPages" Assembly="Microsoft.SharePoint, Version=16.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" %> <%@ Register Tagprefix="PublishingWebControls" Namespace="Microsoft.SharePoint.Publishing.WebControls" Assembly="Microsoft.SharePoint.Publishing, Version=16.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" %> <%@ Register Tagprefix="PublishingNavigation" Namespace="Microsoft.SharePoint.Publishing.Navigation" Assembly="Microsoft.SharePoint.Publishing, Version=16.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" %>
 <asp:Content ContentPlaceholderID="PlaceHolderPageTitle" runat="server">
 	<SharePointWebControls:FieldValue id="PageTitle" FieldName="Title" runat="server"/>
@@ -9,20 +9,20 @@
 				<div id="kr-ticker" class="kr-ticker carousel slide" data-ride="carousel">
 					<!-- Wrapper for slides -->
 					<div class="kr-ticker__inner carousel-inner" role="listbox">
-						<div class="kr-ticker__item item active">
+						<div class="kr-ticker__item carousel-item active">
 						
 							<div class="kr-ticker__caption carousel-caption">
 								<h2 class="kr-ticker__caption-title">Latest News <i class="fa fa-long-arrow-right m-l-2" aria-hidden="true"></i></h2>
 								<div class="kr-ticker__caption-desc">08/10/2017 An Apple app developer should have a look at IOS Human interface guidelines and follow Apple standards</div>
 							</div>
 						</div>
-						<div class="kr-ticker__item item">								
+						<div class="kr-ticker__item carousel-item">								
 							<div class="kr-ticker__caption carousel-caption">
 								<h2 class="kr-ticker__caption-title">Latest News <i class="fa fa-long-arrow-right m-l-2" aria-hidden="true"></i></h2>
 								<div class="kr-ticker__caption-desc">08/10/2017 An Apple app developer should have a look at IOS Human interface guidelines and follow Apple standards</div>
 							</div>
 						</div>
-						<div class="kr-ticker__item item">
+						<div class="kr-ticker__item carousel-item">
 						
 							<div class="kr-ticker__caption carousel-caption">
 								<h2 class="kr-ticker__caption-title">Latest News <i class="fa fa-long-arrow-right m-l-2" aria-hidden="true"></i></h2>
@@ -32,11 +32,11 @@
 					</div>
 
 					<!-- Controls -->
-					<a class="kr-ticker__control left carousel-control" href="#kr-ticker" role="button" data-slide="prev">
+					<a class="kr-ticker__control carousel-control-prev" href="#kr-ticker" role="button" data-slide="prev">
 						<span class="fa fa-angle-left" aria-hidden="true"></span>
 						<span class="sr-only">Previous</span>
 					</a>
-					<a class="kr-ticker__control right carousel-control" href="#kr-ticker" role="button" data-slide="next">
+					<a class="kr-ticker__control carousel-control-next" href="#kr-ticker" role="button" data-slide="next">
 						<span class="fa fa-angle-right" aria-hidden="true"></span>
 						<span class="sr-only">Next</span>
 					</a>
@@ -56,21 +56,21 @@
 
 					<!-- Wrapper for slides -->
 					<div class="kr-carousel__inner carousel-inner" role="listbox">
-						<div class="kr-carousel__item item active">
+						<div class="kr-carousel__item carousel-item active">
 							<img src="../Style Library/haiiro/assets/slider-1.jpg" alt="...">
 							<div class="kr-carousel__caption carousel-caption">
 								<h2 class="kr-carousel__caption-title">Title</h2>
 								<div class="kr-carousel__caption-desc">Description</div>
 							</div>
 						</div>
-						<div class="kr-carousel__item item">
+						<div class="kr-carousel__item carousel-item">
 							<img src="../Style Library/haiiro/assets/slider-2.jpg" alt="...">
 							<div class="kr-carousel__caption carousel-caption">
 								<h2 class="kr-carousel__caption-title">Title</h2>
 								<div class="kr-carousel__caption-desc">Description</div>
 							</div>
 						</div>
-						<div class="kr-carousel__item item">
+						<div class="kr-carousel__item carousel-item">
 							<img src="../Style Library/haiiro/assets/slider-3.jpg" alt="...">
 							<div class="kr-carousel__caption carousel-caption">
 								<h2 class="kr-carousel__caption-title">Title</h2>
@@ -80,11 +80,11 @@
 					</div>
 
 					<!-- Controls -->
-					<a class="kr-carousel__control left carousel-control" href="#kr-carousel" role="button" data-slide="prev">
+					<a class="kr-carousel__control carousel-control-prev" href="#kr-carousel" role="button" data-slide="prev">
 						<span class="fa fa-angle-left" aria-hidden="true"></span>
 						<span class="sr-only">Previous</span>
 					</a>
-					<a class="kr-carousel__control right carousel-control" href="#kr-carousel" role="button" data-slide="next">
+					<a class="kr-carousel__control carousel-control-next" href="#kr-carousel" role="button" data-slide="next">
 						<span class="fa fa-angle-right" aria-hidden="true"></span>
 						<span class="sr-only">Next</span>
 					</a>
